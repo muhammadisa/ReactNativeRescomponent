@@ -13,15 +13,22 @@
   "keywords": [
     "react native",
     "responsive size",
+    "responsive height",
+    "responsive width",
+    "responsive font size",
     "responsive component",
     "responsive font size react native",
     "react native responsive component",
-    "react native res component"
+    "react native res component",
+    "fontSize",
+    "width",
+    "heigth"
   ],
   "author": "Muhammad Isa Wijaya Kusuma",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "0.55.4"
+    "react-native": "*",
+    "prop-types": "*"
   },
   "bugs": {
     "url": "https://github.com/Hyperspace018/react-native-rescomponent/issues"
