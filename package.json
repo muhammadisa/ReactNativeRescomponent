@@ -1,0 +1,27 @@
+{
+  "name": "react-native-rescomponent",
+  "version": "1.0.0",
+  "description": "React Native responsive components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperspace018/react-native-rescomponent.git"
+  },
+  "keywords": [
+    "react native",
+    "responsive size",
+    "responsive component",
+    "responsive font size react native",
+    "react native responsive component",
+    "react native res component"
+  ],
+  "author": "Muhammad Isa Wijaya Kusuma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hyperspace018/react-native-rescomponent/issues"
+  },
+  "homepage": "https://github.com/Hyperspace018/react-native-rescomponent#readme"
+}
