@@ -27,8 +27,7 @@
   "author": "Muhammad Isa Wijaya Kusuma",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "*",
-    "prop-types": "*"
+    "react-native": "*"
   },
   "bugs": {
     "url": "https://github.com/Hyperspace018/react-native-rescomponent/issues"
@@ -36,5 +35,6 @@
   "homepage": "https://github.com/Hyperspace018/react-native-rescomponent#readme",
   "devDependencies": {
     "babel-preset-react-native": "^4.0.0"
-  }
+  },
+  "dependencies": {}
 }
