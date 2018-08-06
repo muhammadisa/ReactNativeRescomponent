@@ -36,7 +36,7 @@ import {
 
 ## Implement
 
-### Inside container component
+### Inside Container component
 ```javascript
 import React, { Component } from 'react'
 import { Container } from 'native-base'
@@ -47,7 +47,7 @@ import {
   responsiveSize as resSize
 } from 'react-native-rescomponent'
 
-export default clas MyComponent extends Component{
+export default class MyComponent extends Component{
   render(){
     return(
       <Container style={{
@@ -56,6 +56,34 @@ export default clas MyComponent extends Component{
       }}>
       
         ...
+        
+       </Container>
+    )
+  }
+}
+```
+### Inside View component
+```javascript
+import React, { Component } from 'react'
+import { Container } from 'native-base'
+import { View } from 'react-native'
+import {
+  responsiveWidth as resWidth,
+  responsiveHeight as resHeigth,
+  responsiveFontSize as resFontSize,
+  responsiveSize as resSize
+} from 'react-native-rescomponent'
+
+export default class MyComponent extends Component{
+  render(){
+    return(
+      <Container style={{width: resWidth('100%'), height: resHeight('100%')}}>
+      
+        <View style={{width: resWidth('100%'), height: resHeight('100%')}}>
+        
+          ...
+          
+        </View>
         
        </Container>
     )
