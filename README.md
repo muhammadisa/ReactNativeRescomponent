@@ -1,5 +1,6 @@
 # react-native-rescomponent
 React Native Module that makes your react-native components responsive and fit to various devices Edit
+![Alt Text](http://i.imgur.com/OUkLi.gif)
 ## Getting Started
 
 ### Installing the module
@@ -24,6 +25,7 @@ import {
   responsiveSize
 } from 'react-native-rescomponent'
 ```
+
 ### Import with alias for simple call
 ```javascript
 import {
@@ -36,7 +38,21 @@ import {
 
 ## Implement
 
-### Inside container component
+### Required Parameter
+
+```javascript
+// Use percentage as String
+responsiveWidth('100%')
+```
+
+### Or
+
+```javascript
+// Use percentage as Integer
+responsiveWidth(100)
+```
+
+### Inside Container component
 ```javascript
 import React, { Component } from 'react'
 import { Container } from 'native-base'
@@ -47,7 +63,7 @@ import {
   responsiveSize as resSize
 } from 'react-native-rescomponent'
 
-export default clas MyComponent extends Component{
+export default class MyComponent extends Component{
   render(){
     return(
       <Container style={{
@@ -56,6 +72,34 @@ export default clas MyComponent extends Component{
       }}>
       
         ...
+        
+       </Container>
+    )
+  }
+}
+```
+### Inside View component
+```javascript
+import React, { Component } from 'react'
+import { Container } from 'native-base'
+import { View } from 'react-native'
+import {
+  responsiveWidth as resWidth,
+  responsiveHeight as resHeigth,
+  responsiveFontSize as resFontSize,
+  responsiveSize as resSize
+} from 'react-native-rescomponent'
+
+export default class MyComponent extends Component{
+  render(){
+    return(
+      <Container style={{width: resWidth('100%'), height: resHeight('100%')}}>
+      
+        <View style={{width: resSize('50%'), height: resSize('50%')}}>
+        
+          ...
+          
+        </View>
         
        </Container>
     )
