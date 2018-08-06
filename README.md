@@ -33,3 +33,22 @@ import {
   responsiveSize as resSize
 } from 'react-native-rescomponent'
 ```
+
+## Implement
+
+### Inside container component
+```javascript
+import {
+  responsiveWidth as resWidth,
+  responsiveHeight as resHeigth,
+  responsiveFontSize as resFontSize,
+  responsiveSize as resSize
+} from 'react-native-rescomponent'
+
+<Container style={{
+  width: resWidth('100%'),
+  height: resHeight('100%')
+}}>
+
+</Container>
+```
