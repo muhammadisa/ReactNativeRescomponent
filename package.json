@@ -1,6 +1,6 @@
 {
   "name": "react-native-rescomponent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native Module that makes your react-native components responsive and fit to various devices",
   "main": "index.js",
   "scripts": {
