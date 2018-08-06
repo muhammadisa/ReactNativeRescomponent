@@ -40,7 +40,6 @@ import {
 ### Required Parameter
 
 ```javascript
-import { responsiveWidth } from 'react-native-rescomponent'
 // Use percentage as String
 responsiveWidth('100%')
 ```
@@ -48,7 +47,6 @@ responsiveWidth('100%')
 ### Or
 
 ```javascript
-import { responsiveWidth } from 'react-native-rescomponent'
 // Use percentage as Integer
 responsiveWidth(100)
 ```
