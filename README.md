@@ -24,6 +24,12 @@ import {
   responsiveSize
 } from 'react-native-rescomponent'
 ```
+You can parse value in different data type 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ### Import with alias for simple call
 ```javascript
 import {
@@ -79,7 +85,7 @@ export default class MyComponent extends Component{
     return(
       <Container style={{width: resWidth('100%'), height: resHeight('100%')}}>
       
-        <View style={{width: resWidth('100%'), height: resHeight('100%')}}>
+        <View style={{width: resSize('50%'), height: resSize('50%')}}>
         
           ...
           
