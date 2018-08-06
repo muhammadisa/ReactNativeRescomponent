@@ -7,7 +7,8 @@ const responsiveWidth = inputWidth => {
     const parsedWidth = parseFloat(inputWidth)
     return PixelRatio.roundToNearestPixel( screenWidth * parsedWidth / 100 )
   }else{
-    return screenWidth * ( inputWidth / 100 )
+    const parsedWidth = parseFloat(inputWidth)
+    return PixelRatio.roundToNearestPixel( screenWidth * parsedWidth / 100 )
   }
 
 }
@@ -19,7 +20,8 @@ const responsiveHeight = inputHeight => {
     const parsedHeight = parseFloat(inputHeight)
     return PixelRatio.roundToNearestPixel( screenHeight * parsedHeight / 100 )
   }else{
-    return screenHeight * ( inputHeight / 100 )
+    const parsedHeight = parseFloat(inputHeight)
+    return PixelRatio.roundToNearestPixel( screenHeight * parsedHeight / 100 )
   }
 
 }
@@ -32,7 +34,9 @@ const responsiveFontSize = fontSize => {
     const convertResult = Math.sqrt(( height * height ) + ( width * width )) * ( parsedFontSize / 100 )
     return PixelRatio.roundToNearestPixel(convertResult)
   }else{
-    return Math.sqrt(( height * height ) + ( width * width )) * ( fontSize / 100 )
+    const parsedFontSize = parseFloat(fontSize)
+    const convertResult = Math.sqrt(( height * height ) + ( width * width )) * ( parsedFontSize / 100 )
+    return PixelRatio.roundToNearestPixel(convertResult)
   }
 
 }
@@ -45,7 +49,9 @@ const responsiveSize = inputSize => {
     const convertResult = Math.sqrt(( height * height ) + ( width * width )) * ( parsedFontSize / 100 )
     return PixelRatio.roundToNearestPixel(convertResult)
   }else{
-    return Math.sqrt(( height * height ) + ( width * width )) * ( inputSize / 100 )
+    const parsedFontSize = parseFloat(inputSize)
+    const convertResult = Math.sqrt(( height * height ) + ( width * width )) * ( parsedFontSize / 100 )
+    return PixelRatio.roundToNearestPixel(convertResult)
   }
 
 }
