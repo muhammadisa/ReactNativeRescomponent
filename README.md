@@ -24,7 +24,7 @@ import {
   responsiveSize
 } from 'react-native-rescomponent'
 ```
-### Import with alias
+### Import with alias for simple call
 ```javascript
 import {
   responsiveWidth as resWidth,
