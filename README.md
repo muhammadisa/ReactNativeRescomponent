@@ -38,6 +38,8 @@ import {
 
 ### Inside container component
 ```javascript
+import React, { Component } from 'react'
+import { Container } from 'native-base'
 import {
   responsiveWidth as resWidth,
   responsiveHeight as resHeigth,
@@ -45,10 +47,18 @@ import {
   responsiveSize as resSize
 } from 'react-native-rescomponent'
 
-<Container style={{
-  width: resWidth('100%'),
-  height: resHeight('100%')
-}}>
-
-</Container>
+export default clas MyComponent extends Component{
+  render(){
+    return(
+      <Container style={{
+        width: resWidth('100%'),
+        height: resHeight('100%')
+      }}>
+      
+        ...
+        
+       </Container>
+    )
+  }
+}
 ```
