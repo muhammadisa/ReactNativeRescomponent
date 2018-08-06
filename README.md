@@ -24,12 +24,6 @@ import {
   responsiveSize
 } from 'react-native-rescomponent'
 ```
-You can parse value in different data type 
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
 ### Import with alias for simple call
 ```javascript
@@ -42,6 +36,20 @@ import {
 ```
 
 ## Implement
+
+### Required Parameter
+
+```javascript
+// Use percentage as String
+responsiveWidth('100%')
+```
+
+Or
+
+```javascript
+// Use percentage as Integer
+responsiveWidth(100)
+```
 
 ### Inside Container component
 ```javascript
