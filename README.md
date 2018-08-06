@@ -1,6 +1,5 @@
 # react-native-rescomponent
 React Native Module that makes your react-native components responsive and fit to various devices Edit
-![Alt Text](http://i.imgur.com/OUkLi.gif)
 ## Getting Started
 
 ### Installing the module
@@ -78,10 +77,11 @@ export default class MyComponent extends Component{
   }
 }
 ```
+
 ### Inside View component
 ```javascript
 import React, { Component } from 'react'
-import { Container } from 'native-base'
+import { Container, Content } from 'native-base'
 import { View } from 'react-native'
 import {
   responsiveWidth as resWidth,
@@ -95,11 +95,59 @@ export default class MyComponent extends Component{
     return(
       <Container style={{width: resWidth('100%'), height: resHeight('100%')}}>
       
-        <View style={{width: resSize('50%'), height: resSize('50%')}}>
+        <Content contentContainerStyle={{
+          justifyContent: 'center',
+          alignItems:'center',
+          flex: 1
+        }}>
         
-          ...
-          
-        </View>
+          <View style={{width: resSize('50%'), height: resSize('50%'), backgroundColor: "blue"}}>
+
+            ...
+
+          </View>
+        
+        </Content>
+        
+       </Container>
+    )
+  }
+}
+```
+
+### Inside Container component
+```javascript
+import React, { Component } from 'react'
+import { Container, Content } from 'native-base'
+import { View, Text } from 'react-native'
+import {
+  responsiveWidth as resWidth,
+  responsiveHeight as resHeigth,
+  responsiveFontSize as resFontSize,
+  responsiveSize as resSize
+} from 'react-native-rescomponent'
+
+export default class MyComponent extends Component{
+  render(){
+    return(
+      <Container style={{
+        width: resWidth('100%'),
+        height: resHeight('100%')
+      }}>
+      
+        <Content contentContainerStyle={{
+          justifyContent: 'center',
+          alignItems:'center',
+          flex: 1
+        }}>
+        
+          <View style={{width: resSize('50%'), height: resSize('50%'), backgroundColor: "blue"}}>
+
+            <Text style={{fontSize: resFontSize(1)}}>Responsive Text</Text>
+
+          </View>
+        
+        </Content>
         
        </Container>
     )
