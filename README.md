@@ -1,5 +1,6 @@
 # react-native-rescomponent
 React Native Module that makes your react-native components responsive and fit to various devices Edit
+![Alt Text](http://i.imgur.com/OUkLi.gif)
 ## Getting Started
 
 ### Installing the module
