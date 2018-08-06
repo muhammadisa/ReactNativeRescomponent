@@ -7,7 +7,8 @@ React Native Module that makes your react-native components responsive and fit t
 npm i react-native-rescomponent
 ```
 
-### If you want add to dependencies in package.json
+### Other Way
+If you want add to dependencies in package.json
 ```
 npm i --save react-native-rescomponent
 ```
