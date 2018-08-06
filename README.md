@@ -25,6 +25,7 @@ import {
 } from 'react-native-rescomponent'
 ```
 You can parse value in different data type 
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
